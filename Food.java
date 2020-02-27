@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Food here.
+ * Class untuk JFood yang menangani Food.
  *
- * LuthfiRH31 - 1706042794
- * 1.0
+ * @author LuthfiRH31 - 1706042794
+ * @version 1.0 (27-02-2020)
  */
 public class Food
 {
@@ -66,5 +66,6 @@ public class Food
     }
     
     public void printData(){
+        System.out.println(name);
     }
 }

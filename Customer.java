@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class JFood here.
+ * Class untuk JFood yang menangani Costumer.
  *
- * LuthfiRH31 - 1706042794
- * 0.0
+ * @author LuthfiRH31 - 1706042794
+ * @version 1.0 (27-02-2020)
  */
 public class Customer
 {

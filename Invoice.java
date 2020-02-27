@@ -1,9 +1,10 @@
 
+
 /**
- * Write a description of class Invoice here.
+ * Class untuk JFood yang menangani Invoice.
  *
- * LuthfiRH31 - 1706042794
- * 1.0
+ * @author LuthfiRH31 - 1706042794
+ * @version 1.0 (27-02-2020)
  */
 public class Invoice
 {
@@ -66,5 +67,6 @@ public class Invoice
     }
     
     public void printData(){
+        System.out.println(date);
     }
 }

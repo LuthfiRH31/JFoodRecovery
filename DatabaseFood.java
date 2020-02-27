@@ -1,10 +1,11 @@
 
 /**
- * Write a description of class Location here.
+ * Class untuk JFood yang menangani DatabaseFood.
  *
- * LuthfiRH31 - 1706042794
- * 1.0
+ * @author LuthfiRH31 - 1706042794
+ * @version 1.0 (27-02-2020)
  */
+
 public class DatabaseFood{
     private String[] listFood;
 
