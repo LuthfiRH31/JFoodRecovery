@@ -39,10 +39,6 @@ public class Customer
     public String getJoinDate(){
         return "oke";
     }
-    
-    public String getPassword(){
-        return "oke";
-    }
 
     public void setId(int id){
     }
