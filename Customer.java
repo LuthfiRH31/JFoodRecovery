@@ -1,30 +1,29 @@
 
 /**
- * Class untuk JFood yang menangani Costumer.
+ * Ini adalah class yang berkaitan dengan data pengguna/pemesan makanan pada aplikasi JFood.
  *
- * @author LuthfiRH31 - 1706042794
+ * @author LuthfiRH31 (Luthfi Rahman Hardy) - 1706042794
  * @version 1.0 (27-02-2020)
  */
-public class Customer
+
+public class Customer /**deklarasi nama class program yang akan dibangun*/
 {
-    // instance variables - replace the example below with your own
-    private int id;
-    private String name;
-    private String email;
-    private String password;
-    private String joinDate;
+    
+    private int id; //variable untuk menampilkan ID pengguna
+    private String name; //variable untuk menampilkan nama pengguna
+    private String email; //variable untuk menampilkan email pengguna
+    private String password; //variable untuk menampilkan password pengguna
+    private String joinDate; //variable untuk menampilkan tanggal pendaftaran program oleh pengguna
 
-    /**
-     * Constructor for objects of class Customer
-     */
+    /** Constructor untuk object-object dalam class Customer */
     public Customer(int id, String name, String email, String password, String joinDate){
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.joinDate = joinDate;
+        this.id = id; //parameter untuk menampilkan ID pengguna
+        this.name = name; //parameter untuk menampilkan nama pengguna
+        this.email = email; //parameter untuk menampilkan email pengguna
+        this.password = password; //parameter untuk menampilkan password pengguna
+        this.joinDate = joinDate; //parameter untuk menampilkan tanggal pendaftaran program oleh pengguna
     }
-
+    /** Getter */
     public int getId(){
         return this.id;
     }

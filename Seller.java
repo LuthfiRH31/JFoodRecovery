@@ -1,10 +1,11 @@
 
 /**
- * Class untuk JFood yang menangani Seller.
+ * Ini adalah class yang berkaitan dengan data penyedia makanan pada aplikasi JFood.
  *
- * @author LuthfiRH31 - 1706042794
+ * @author LuthfiRH31 (Luthfi Rahman Hardy) - 1706042794
  * @version 1.0 (27-02-2020)
  */
+
 public class Seller
 {
     // instance variables - replace the example below with your own

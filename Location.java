@@ -1,10 +1,11 @@
 
 /**
- * Class untuk JFood yang menangani Location.
+ * Ini adalah class yang berkaitan dengan data lokasi pengantaran pada aplikasi JFood.
  *
- * @author LuthfiRH31 - 1706042794
+ * @author LuthfiRH31 (Luthfi Rahman Hardy) - 1706042794
  * @version 1.0 (27-02-2020)
  */
+
 public class Location
 {
     // instance variables - replace the example below with your own
