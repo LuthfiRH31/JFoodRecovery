@@ -9,20 +9,19 @@
 public class JFood
 {
     public static void main(String[] args){
-        Location home = new Location("DKI Jakarta", "Home", "Jakarta Pusat");
-        home.setProvince("DI Yogyakarta");
-        home.printData();
+        Location rumah = new Location("DKI Jakarta", "Home", "Jakarta Pusat");
+                
+        Seller jual = new Seller(010, "Luthfi Rahman Hardy", "luthfirh31@gmail.com", "081280442032", rumah);
+        jual.printData();
+        jual.setName("M. Kharisma R.");
+        jual.printData();
         
-        Seller vendor = new Seller(010, "Oesman", "oesman77@yahoo.com", "081123654246531", home);
-        vendor.printData();
+        Food makan = new Food(111, "chiken teriyaki", jual, 13500, "chicken");
+        makan.printData();
+                
+        Customer pribadi = new Customer(101, "Ali Usman", "aliusman@gmail.com", "helvetica", "11 Sep 1989");
+                
+        Invoice bill =  new Invoice(000, 100, "27 Feb 2020", 13500, pribadi);
         
-        Food noodle = new Food(111, "katsu", vendor, 13500, "chicken");
-        noodle.printData();
-        
-        Customer myself = new Customer(101, "Jovie", "jovie31@gmail.com", "helvetica", "31 Oct 1989");
-        myself.printData();
-        
-        Invoice bill =  new Invoice(000, 100, "27 Feb 2020", 13500, myself);
-        bill.printData();
     }
 }

@@ -1,12 +1,13 @@
 
 /**
- * Ini adalah class yang berkaitan dengan data pemesanan makanan pada aplikasi JFood.
+ * Ini adalah class yang berkaitan dengan database makanan pada aplikasi JFood.
  *
  * @author LuthfiRH31 (Luthfi Rahman Hardy) - 1706042794
  * @version 1.0 (27-02-2020)
  */
 
 public class DatabaseFood{
+    
     private String[] listFood;
 
     public DatabaseFood(){
