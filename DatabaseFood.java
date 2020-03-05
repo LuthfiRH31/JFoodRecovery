@@ -6,12 +6,9 @@
  * @version 1.0 (27-02-2020)
  */
 
-public class DatabaseFood{
-    
+public class DatabaseFood
+{
     private String[] listFood;
-
-    public DatabaseFood(){
-    }
     
     public boolean addFood(Food food){
         return false;    
