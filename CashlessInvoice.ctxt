@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=CashlessInvoice
+comment0.text=\r\n\ Ini\ adalah\ class\ yang\ berkaitan\ dengan\ data\ pembayaran\ pesanan\ pada\ aplikasi\ JFood.\r\n\r\n\ @author\ LuthfiRH31\ (Luthfi\ Rahman\ Hardy)\ -\ 1706042794\r\n\ @version\ 0.0\ (12-03-2020)\r\n
+comment1.params=id\ food\ date\ customer\ invoicestatus
+comment1.target=CashlessInvoice(int,\ Food,\ java.lang.String,\ Customer,\ InvoiceStatus)
+comment2.params=
+comment2.target=PaymentType\ getPaymentType()
+comment3.params=
+comment3.target=Promo\ getPromo()
+comment4.params=promo
+comment4.target=void\ setPromo(Promo)
+comment5.params=
+comment5.target=void\ setTotalPrice()
+comment6.params=
+comment6.target=void\ printData()
+numComments=7

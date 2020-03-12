@@ -18,8 +18,6 @@ public class JFood
         makan.printData();
                 
         Customer pribadi = new Customer(101, "Ali Usman", "aliusman@gmail.com", "helvetica", "11 Sep 1989");
-                
-        Invoice bill =  new Invoice(000, 100, "27 Feb 2020", 13500, pribadi);
         
     }
 }

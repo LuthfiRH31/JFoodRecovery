@@ -3,7 +3,7 @@
  * Ini adalah class yang berkaitan dengan metode pembayaran pada aplikasi JFood.
  *
  * @author LuthfiRH31 (Luthfi Rahman Hardy) - 1706042794
- * @version 0.0 (05-03-2020)
+ * @version 1.0 (12-03-2020)
  */
 
 public enum PaymentType{

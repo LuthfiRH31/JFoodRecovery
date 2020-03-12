@@ -3,35 +3,32 @@
  * Ini adalah class yang berkaitan dengan data pembayaran pesanan pada aplikasi JFood.
  *
  * @author LuthfiRH31 (Luthfi Rahman Hardy) - 1706042794
- * @version 1.0 (27-02-2020)
+ * @version 2.0 (12-03-2020)
  */
 
-public class Invoice
+public abstract class Invoice
 {
-    // instance variables - replace the example below with your own
     private int id;
-    private int idFood;
+    private Food food;
     private String date;
-    private int totalPrice;
+    protected int totalPrice;
     private Customer customer;
+    private InvoiceStatus invoiceStatus;
 
-    /**
-     * Constructor for objects of class Invoice
-     */
-    public Invoice(int id, int idFood, String date, int totalPrice, Customer customer){
+    public Invoice(int id, Food food, String date, Customer customer, InvoiceStatus invoiceStatus){
         this.id = id;
-        this.idFood = idFood;
+        this.food = food;
         this.date = date;
-        this.totalPrice = totalPrice;
         this.customer = customer;
+        this.invoiceStatus = invoiceStatus;
     }
 
     public int getId(){
         return this.id;
     }
     
-    public int getIdFood(){
-        return this.idFood;
+    public Food getFood(){
+        return this.food;
     }
             
     public String getDate(){
@@ -42,6 +39,12 @@ public class Invoice
         return this.totalPrice;
     }
     
+    public abstract PaymentType getPaymentType();
+    
+    public InvoiceStatus getInvoiceStatus(){
+        return this.invoiceStatus;
+    }
+    
     public Customer getCustomer(){
         return this.customer;    
     }
@@ -50,23 +53,23 @@ public class Invoice
         this.id = id;
     }
     
-    public void setIdFoods(int idFood){
-        this.idFood = idFood;
+    public void setFood(Food food){
+        this.food = food;
     }
     
     public void setDate(String date){
         this.date = date; 
     }
     
-    public void setTotalPrice(int totalPrice){
-        this.totalPrice = totalPrice;
-    }
+    public abstract void setTotalPrice();
     
     public void setCustomer(Customer customer){
         this.customer = customer;
     }
-    
-    public void printData(){
-        System.out.println(date);
+        
+    public void setInvoiceStatus(InvoiceStatus invoiceStatus){
+        this.invoiceStatus = invoiceStatus;
     }
+    
+    public abstract void printData();
 }
