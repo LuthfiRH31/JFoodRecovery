@@ -64,11 +64,11 @@ public class Promo
     }
     
     public void printData(){
-        System.out.println("=============PROMO============");
-        System.out.println("ID: "+getId());
-        System.out.println("Code: "+getCode());
-        System.out.println("Discount: "+getDiscount());
-        System.out.println("Min. Price: "+getMinPrice());
-        System.out.println("Active: "+getActive());
+        System.out.println("\n===========PROMO============");
+        System.out.println("ID: " + getId());
+        System.out.println("Code: " + getCode());
+        System.out.println("Discount: " + getDiscount());
+        System.out.println("Min. Price: " + getMinPrice());
+        System.out.println("Active: " + getActive() + "\n");
     }
 }

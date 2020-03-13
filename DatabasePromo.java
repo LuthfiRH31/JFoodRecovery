@@ -17,7 +17,7 @@ public class DatabasePromo
     
     public boolean removePromo(Promo promo)
     {
-        return false;
+        return true;
     }
     
     public Promo getPromo()

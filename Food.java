@@ -66,12 +66,12 @@ public class Food
     }
     
     public void printData(){
-        System.out.println("==============FOOD=============");
-        System.out.println("ID: "+getId());
-        System.out.println("Name: "+getName());
-        System.out.println("Seller: "+seller.getName());
-        System.out.println("City: "+seller.getLocation().getCity());
-        System.out.println("Price: "+getPrice());
-        System.out.println("Category: "+getCategory());
+        System.out.println("\n============FOOD============");
+        System.out.println("ID: " + getId());
+        System.out.println("Name: " + getName());
+        System.out.println("Seller: " + seller.getName());
+        System.out.println("City: " + seller.getLocation().getCity());
+        System.out.println("Price: " + getPrice());
+        System.out.println("Category: " + getCategory() + "\n");
     }
 }

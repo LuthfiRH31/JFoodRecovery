@@ -1,9 +1,9 @@
-;
+
 /**
- * Ini adalah class yang berkaitan dengan data pembayaran pesanan pada aplikasi JFood.
+ * Ini adalah class yang berkaitan dengan fraktur khusus pembayaran digital pesanan pada aplikasi JFood.
  *
  * @author LuthfiRH31 (Luthfi Rahman Hardy) - 1706042794
- * @version 0.0 (12-03-2020)
+ * @version 0.1 (12-03-2020)
  */
 
 public class CashlessInvoice extends Invoice
@@ -11,9 +11,9 @@ public class CashlessInvoice extends Invoice
     private static final PaymentType PAYMENT_TYPE = PaymentType.CASHLESS;
     private Promo promo;
     
-    public CashlessInvoice(int id, Food food, String date, Customer customer, InvoiceStatus invoicestatus)
+    public CashlessInvoice(int id, Food food, String date, Customer customer, InvoiceStatus invoiceStatus)
     {
-        super(id, food, date, customer, invoicestatus);
+        super(id, food, date, customer, invoiceStatus);
         this.promo = promo;
     }
     
@@ -22,7 +22,7 @@ public class CashlessInvoice extends Invoice
     }
     
     public Promo getPromo(){
-        return this.promo;
+        return promo;
     }
     
     public void setPromo(Promo promo){
@@ -37,26 +37,26 @@ public class CashlessInvoice extends Invoice
         }
     }
     
-    public void printData(){
-        if(promo == null || promo.getActive() == false || getFood().getPrice() < promo.getMinPrice()){
-            System.out.println("==========INVOICE==========");
+    public void printData(){             
+          if(promo == null || promo.getActive() == false || getFood().getPrice() < promo.getMinPrice()){
+            System.out.println("\n===========INVOICE==========");
             System.out.println("ID: "+ super.getId());
-            System.out.println("Food: "+ super.getFood());
+            System.out.println("Food: "+ super.getFood().getName());
             System.out.println("Date: "+ super.getDate());
             System.out.println("Customer: "+ super.getCustomer().getName());
-            System.out.println("Total price: "+ super.getTotalPrice());
+            System.out.println("Total Price: " + getTotalPrice());
             System.out.println("Status: "+ super.getInvoiceStatus());
-            System.out.println("Payment Type: "+ PAYMENT_TYPE);
-        } else {
-            System.out.println("==========INVOICE==========");
-            System.out.println("ID: "+ super.getId());
-            System.out.println("Food: "+ super.getFood());
-            System.out.println("Date: "+ super.getDate());
-            System.out.println("Customer: "+ super.getCustomer().getName());
-            System.out.println("Promo: "+ promo);
-            System.out.println("Total price: "+ super.getTotalPrice());
-            System.out.println("Status: "+ super.getInvoiceStatus());
-            System.out.println("Payment Type: "+ PAYMENT_TYPE);
+            System.out.println("Payment Type: "+ PAYMENT_TYPE + "\n");
+          } else {
+            System.out.println("\n===========INVOICE==========");
+            System.out.println("ID: " + super.getId());
+            System.out.println("Food: " + super.getFood().getName());
+            System.out.println("Date: " + super.getDate());
+            System.out.println("Customer: " + super.getCustomer().getName());
+            System.out.println("Promo: " + promo);
+            System.out.println("Total Price: " + getTotalPrice());
+            System.out.println("Status: " + super.getInvoiceStatus());
+            System.out.println("Payment Type: " + PAYMENT_TYPE + "\n");
         }
     }
 }

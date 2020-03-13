@@ -8,12 +8,12 @@
 
 public abstract class Invoice
 {
-    private int id;
-    private Food food;
-    private String date;
-    protected int totalPrice;
-    private Customer customer;
-    private InvoiceStatus invoiceStatus;
+    private int id; //variable untuk menampilkan no. ID fraktur
+    private Food food; //variable untuk menampilkan nama makanan pesanan
+    private String date; //variable untuk menampilkan tanggal pemesanan
+    protected int totalPrice; //variable untuk menampilkan jumlah harga
+    private Customer customer; //variable untuk menampilkan data pemesan
+    private InvoiceStatus invoiceStatus; //variable untuk menampilkan status pesanan
 
     public Invoice(int id, Food food, String date, Customer customer, InvoiceStatus invoiceStatus){
         this.id = id;

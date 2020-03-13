@@ -43,7 +43,8 @@ public class Customer /**deklarasi nama class program yang akan dibangun*/
     public String getJoinDate(){
         return this.joinDate;
     }
-
+    
+    /** Setter */
     public void setId(int id){
         this.id = id;
     }
@@ -64,6 +65,7 @@ public class Customer /**deklarasi nama class program yang akan dibangun*/
         this.joinDate = joinDate;
     }
     
+    /** Fungsi Print Data */
     public void printData(){
         System.out.println(name);
     } 
