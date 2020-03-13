@@ -11,7 +11,7 @@ public class CashlessInvoice extends Invoice
     private static final PaymentType PAYMENT_TYPE = PaymentType.CASHLESS;
     private Promo promo;
     
-    public CashlessInvoice(int id, Food food, String date, Customer customer, InvoiceStatus invoiceStatus)
+    public CashlessInvoice(int id, Food food, String date, Customer customer, InvoiceStatus invoiceStatus, Promo promo)
     {
         super(id, food, date, customer, invoiceStatus);
         this.promo = promo;

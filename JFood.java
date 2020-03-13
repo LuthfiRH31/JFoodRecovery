@@ -19,24 +19,26 @@ public class JFood
         
         Promo diskon = new Promo(4101, "LinkAja101", 5000, 15000, true);
                       
-        CashlessInvoice notaDigital = new CashlessInvoice(0001, makan, "12/03/2020", pribadi, InvoiceStatus.ONGOING);
-        /**notadigital.printData();
+        Invoice notaDigital1 = new CashlessInvoice(0001, makan, "12/03/2020", pribadi, InvoiceStatus.ONGOING);
+        notaDigital1.setTotalPrice();
+        notaDigital1.printData();
         
-        makan.setName("Chocolate Croissant");        
-        makan.setPrice(13500);
-        notaDigital.setId(0002);
-        notaDigital.printData();
+        Invoice notaDigital2 = new CashlessInvoice(0002, makan, "12/03/2020", pribadi, InvoiceStatus.ONGOING, diskon);
+        makan.setName("Gorengan");        
+        notaDigital2.setTotalPrice();
+        notaDigital2.printData();
+
+        Invoice notaDigital3 = new CashlessInvoice(0003, makan, "12/03/2020", pribadi, InvoiceStatus.ONGOING, diskon);
+        makan.setName("Martabak");
+        notaDigital3.setTotalPrice();
+        notaDigital3.printData();
         
-        makan.setName("Cappucino Caramel Milkshake");
-        makan.setPrice(22500);
-        notaDigital.setId(0003);
-        notaDigital.printData();*/
+        Invoice notaUang1 = new CashInvoice(0004, makan, "03/03/2020", pribadi, InvoiceStatus.FINISHED);
+        notaUang1.setTotalPrice();
+        notaUang1.printData();
         
-        CashInvoice notaUang = new CashInvoice(0004, makan, "03/03/2020", pribadi, InvoiceStatus.FINISHED, 0);
-        notaUang.printData();
-        
-        notaUang.setId(0005);
-        notaUang.setDeliveryFee(10000);
-        notaUang.printData();
+        Invoice notaUang2 = new CashInvoice(0004, makan, "03/03/2020", pribadi, InvoiceStatus.FINISHED, 10000);
+        notaUang2.setTotalPrice();
+        notaUang2.printData();
     }
 }
