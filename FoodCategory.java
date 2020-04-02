@@ -6,24 +6,25 @@
  * @version 0.0 (05-03-2020)
  */
 
-public enum FoodCategory{
-    BEVERAGE("Beverage"),
-    COFFEE("Coffee"),
-    WESTERN("Western"),
-    SNACKS("Snacks"),
-    RICE("Rice"),
-    NOODLES("Noodles"),
-    BAKERY("Bakery"),
-    JAPANESE("Japanese");
+public enum FoodCategory /** deklarasi class enum yang akan dibangun */
+{
+    BEVERAGE("Beverage"), //object untuk menunjukkan kategori 'minuman'
+    COFFEE("Coffee"),  //object untuk menunjukkan kategori 'kopi'
+    WESTERN("Western"), //object untuk menunjukkan kategori 'masakan Western'
+    SNACKS("Snacks"), //object untuk menunjukkan kategori 'cemilan'
+    RICE("Rice"), //object untuk menunjukkan kategori 'nasi'
+    NOODLES("Noodles"), //object untuk menunjukkan kategori 'mie'
+    BAKERY("Bakery"), //object untuk menunjukkan kategori 'roti'
+    JAPANESE("Japanese"); //object untuk menunjukkan kategori 'masakan Jepang'
     
-    private String options;
+    private String foodopt; //variable untuk kategori makanan
     
-    FoodCategory(String options){
-        this.options = options;
+    FoodCategory(String foodopt){
+        this.foodopt = foodopt; //parameter untuk menampilkan kategori makanan
     }
         
     public String toString(){
-        return this.options;
+        return this.foodopt;
     }
     
 }

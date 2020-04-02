@@ -6,11 +6,12 @@
  * @version 1.0 (12-03-2020)
  */
 
-public enum PaymentType{
-    CASH("Cash"),
-    CASHLESS("Cashless");
+public enum PaymentType /** deklarasi class enum yang akan dibangun */
+{
+    CASH("Cash"), //object untuk menunjukkan tipe pembayaran 'tunai/uang'
+    CASHLESS("Cashless"); //object untuk menunjukkan tipe pembayaran 'non-tunai/e-banking/e-money'
     
-    private String pay;
+    private String pay; //variable untuk menunjukkan tipe pembayaran
     
     PaymentType(String pay){
         this.pay = pay;

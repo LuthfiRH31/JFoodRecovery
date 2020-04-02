@@ -6,27 +6,27 @@
  * @version 1.0 (05-03-2020)
  */
 
-public class DatabaseSeller
+public class DatabaseSeller /** Deklarasi class yang akan dibangun */
 {
-    private String[] listSeller;
-
-    public boolean addSeller(Seller seller)
-    {
+    private String[] listSeller;  //variable untuk daftar penjual makanan
+    
+    /** Method untuk menambahkan penjual pada database */
+    public boolean addSeller(Seller seller){
         return false;
     }
     
-    public boolean removeSeller(Seller seller)
-    {
+    /** Method untuk menghapus penjual pada database */
+    public boolean removeSeller(Seller seller){
         return false;
     }
     
-    public Seller getSeller()
-    {
+    /** Method untuk mengambil data penjual terpilih */
+    public Seller getSeller(){
         return null;
     }    
-        
-    public String[] getListSeller()
-    {
+    
+    /** Method untuk mengambil daftar penjual pada database */
+    public String[] getListSeller(){
         return null;
     }
 }

@@ -1,42 +1,41 @@
-
 /**
- * Ini adalah class yang berkaitan dengan data lokasi pengantaran pada aplikasi JFood.
+ * Ini adalah class yang berkaitan dengan lokasi pada aplikasi JFood.
  *
  * @author LuthfiRH31 (Luthfi Rahman Hardy) - 1706042794
- * @version 1.0 (27-02-2020)
+ * @version 1.0 (27/02/2020)
  */
 
-public class Location
-{
-    // instance variables - replace the example below with your own
-    private String province;
-    private String description;
-    private String city;
+import java.util.*;
+import java.util.regex.*;
+import java.text.*;
 
-    /**
-     * Constructor for objects of class Location
-     */
+public class Location /** deklarasi class yang akan dibangun */
+{
+    private String province; //variable untuk provinsi lokasi
+    private String description; //variable untuk deskripsi lokasi
+    private String city; //variable untuk kota lokasi
+
+    /** Constructor untuk parameter dalam class Location */
     public Location(String province, String description, String city){
-        this.province = province;
-        this.description = description;
-        this.city = city;
+        this.province = province; //parameter untuk menampilkan provinsi lokasi
+        this.description = description; //parameter untuk menampilkan deskripsi lokasi
+        this.city = city; //parameter untuk menampilkan deskripsi lokasi
     }
 
-    public String getProvince()
-    {
+    /** Method getter dan parameter yang akan dikembalikan */
+    public String getProvince(){
         return this.province;
     }
     
-    public String getCity()
-    {
+    public String getCity(){
         return this.city;
     }
 
-    public String getDescription()
-    {
+    public String getDescription(){
         return this.description;
     }
     
+    /** Method setter dan parameter yang akan diambil */
     public void setProvince(String province){
         this.province = province;
     }
@@ -49,7 +48,10 @@ public class Location
         this.description = description;
     }
     
-    public void printData(){
-        System.out.println(province);
+    /** Method untuk menampilkan isi dari class */
+    public String toString(){
+        /*System.out.println(province);*/
+        
+        return toString();
     }
 }

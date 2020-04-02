@@ -1,32 +1,32 @@
 
 /**
- * Ini adalah class yang berkaitan dengan database penjual pada aplikasi JFood.
+ * Ini adalah class yang berkaitan dengan database promo pada aplikasi JFood.
  *
  * @author LuthfiRH31 (Luthfi Rahman Hardy) - 1706042794
  * @version 0.0 (05-03-2020)
  */
 
-public class DatabasePromo
+public class DatabasePromo /** Deklarasi class yang akan dibangun */
 {
-    private String[] listSeller;
+    private String[] listSeller;  //variable untuk daftar penjual makanan
 
-    public boolean addPromo(Promo promo)
-    {
+    /** Method untuk menambahkan kode promo pada database */
+    public boolean addPromo(Promo promo){
         return true;
     }
     
-    public boolean removePromo(Promo promo)
-    {
+    /** Method untuk menghapus kode promo pada database */
+    public boolean removePromo(Promo promo){
         return true;
     }
     
-    public Promo getPromo()
-    {
+    /** Method untuk mengambil data kode promo terpilih */
+    public Promo getPromo(){
         return null;
     }    
-        
-    public String[] getListPromo()
-    {
+    
+    /** Method untuk mengambil daftar promo pada database */
+    public String[] getListPromo(){
         return null;
     }
 }

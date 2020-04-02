@@ -6,16 +6,16 @@
  * @version 1.0 (12-03-2020)
  */
 
-public enum InvoiceStatus{
-    ONGOING("Ongoing"),
-    FINISHED("Finished"),
-    CANCELLED("Cancelled");
-    
-    
-    private String invostat;
+public enum InvoiceStatus /** deklarasi class enum yang akan dibangun */
+{
+    ONGOING("Ongoing"), //object untuk menunjukkan status 'sedang berjalan'
+    FINISHED("Finished"), //object untuk menunjukkan status 'sudah selesai'
+    CANCELLED("Cancelled"); //object untuk menunjukkan status 'dibatalkan'
+        
+    private String invostat; //variable untuk status Invoice
     
     InvoiceStatus(String invostat){
-        this.invostat = invostat;
+        this.invostat = invostat; //parameter untuk menampilkan status Invoice
     }
     
     public String toString(){

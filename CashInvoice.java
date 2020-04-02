@@ -1,22 +1,34 @@
-
 /**
- * Ini adalah class yang berkaitan dengan fraktur khusus pembayaran digital pesanan pada aplikasi JFood.
+ * Ini adalah class yang berkaitan dengan fraktur khusus pembayaran tunai pesanan pada aplikasi JFood.
  *
  * @author LuthfiRH31 (Luthfi Rahman Hardy) - 1706042794
  * @version 0.0 (13-03-2020)
  */
 
-public class CashInvoice extends Invoice
+import java.util.*;
+import java.util.regex.*;
+import java.text.*;
+
+public class CashInvoice extends Invoice /** deklarasi subclass yang akan dibangun*/
 {
-    private static final PaymentType PAYMENT_TYPE = PaymentType.CASH;
-    private int deliveryFee;
-    
-    public CashInvoice(int id, Food food, String date, Customer customer, InvoiceStatus invoiceStatus, int deliveryFee)
+    private static final PaymentType PAYMENT_TYPE = PaymentType.CASH; //variable static final untuk tipe pembayaran cash
+    private int deliveryFee; //variable untuk biaya pengantaran
+               
+    /** Constructor untuk parameter dalam class CashInvoice */
+    /** Constructor pertama untuk faktur pesanan 'tanpa' biaya pengantaran */
+    public CashInvoice(int id, Food food, String date, Customer customer, InvoiceStatus invoiceStatus)
     {
-        super(id, food, date, customer, invoiceStatus);
-        this.deliveryFee = deliveryFee;
+        super(id, food, date, customer, invoiceStatus); //mengambil variable dari superclass Invoice
     }
     
+    /** Constructor kedua untuk faktur pesanan 'dengan' biaya pengantaran */
+    public CashInvoice(int id, Food food, String date, Customer customer, InvoiceStatus invoiceStatus, int deliveryFee)
+    {
+        super(id, food, date, customer, invoiceStatus); //mengambil variable dari superclass Invoice
+        this.deliveryFee = deliveryFee; //parameter untuk menampilkan biaya pengantaran
+    }
+    
+    /** Method getter dan parameter yang akan dikembalikan */
     public PaymentType getPaymentType(){
         return PAYMENT_TYPE;
     }
@@ -25,10 +37,12 @@ public class CashInvoice extends Invoice
         return this.deliveryFee;
     }
     
+    /** Method setter dan parameter yang akan diambil */
     public void setDeliveryFee(int deliveryFee){
         this.deliveryFee = deliveryFee;
     }
     
+    /** Method setter untuk perhitungan harga total */
     public void setTotalPrice(){
         if(deliveryFee != 0){
             super.totalPrice = getFood().getPrice() + getDeliveryFee();
@@ -37,6 +51,7 @@ public class CashInvoice extends Invoice
         }
     }
     
+    /** Method untuk menampilkan isi dari class */
     public void printData(){             
            System.out.println("\n===========INVOICE==========");
            System.out.println("ID: " + super.getId());
